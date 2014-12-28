@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+
+<style type="text/css">
+	.bubble{
+		border-radius:10px;
+		-moz-border-radius:10px;
+　　　　-webkit-border-radius:10px;
+　　　　display:none;
+		top:0px;
+		position: relative;
+		
+		width:300px;
+		background:#f3961c;
+		background:-webkit-gradient(linear, left top, left bottom, from(#f9d835), to(#f3961c));
+　　　　background:-moz-linear-gradient(top, #f9d835, #f3961c);
+　　　　background:-o-linear-gradient(top, #f9d835, #f3961c);
+　　　　background:linear-gradient(top, #f9d835, #f3961c);
+		color:#fff;
+		text-align:center;
+		height:100px;
+		font-size: 80%;
+　　}
+.bubble2 {
+		display:none;
+		width:2px;
+		display:block;
+		border-color:#f3961c transparent transparent transparent;
+		border-width:10px;
+		border-style:solid;
+		left:2%;
+		top:-5px;
+		position: relative;
+　　　  bottom: 0px;
+		border-bottom-width: 0px;
+　　　　
+　　}
+	.bubble3 {
+		
+		position:relative;
+		width:300px;
+	}
+</style>
+
+<script type="text/javascript">
+window.onload=a;
+function a(){
+	var a=document.getElementById('di1');
+	var b=document.getElementById('di2');
+	var c=document.getElementById('di3');
+	var d=document.getElementById('di5');
+	a.addEventListener('click',ch,false);
+	function ch(e){
+		var x=e.target;
+		var va=x.innerHTML;
+		var xx=e.clientX;
+		var yy=e.clientY;
+		b.style.display='block ';
+		//c.style.display='inline';
+		//document.getElementById("di2").style.top=100;
+		b.style.top=(yy-345)+'px';
+		b.style.left=(xx-15)+'px';
+		//c.style.top=(yy-10)+'px';
+		//c.style.left=(xx-10)+'px';
+		d.innerHTML=va;
+		//b.style.top=500px;
+		//alert(yy);
+	}
+	
+	function dis(){
+	
+	b.style.display='none';
+	//c.style.display='none';
+}
+}
+
+</script>
+</head>
+<body>
+	<div>
+	<br />
+	<br />
+	<br />
+	<br /><br />
+	<br /><br />
+	<div id="di1"style="border:1px solid #999999; width:300px;" tabindex=2 >
+		<table border="1" width=300px hi>
+			<tr>
+				<td>AAA
+				</td>
+				<td>BBB
+				</td>
+				<td>CCC
+				</td>
+				<td>DDD
+				</td>
+			</tr>
+			<tr>
+				<td>AAA
+				</td>
+				<td>BBB
+				</td>
+				<td>CCC
+				</td>
+				<td>DDD
+				</td>
+			</tr>
+			<tr>
+				<td>AAA
+				</td>
+				<td>BBB
+				</td>
+				<td>CCC
+				</td>
+				<td>DDD
+				</td>
+			</tr>
+		</table>
+	</div>
+		<div id="di2" class="bubble3" style="display:none">
+			<div id="di3"class="bubble" >
+				<div><span>时间：</span><span>10月19日（周二）08:30-09:30</span><img /></div>
+				<div><span>内容：</span><span><input  type="text"/></span></div>
+				<div id="di5">a</div>
+			</div>
+			<div id="di4"class="bubble2" ></div>
+		</div>
+	</div>
+	<br />
+	<br />
+	<br /><br />
+	<br />
+	<br />
+</body>
+</html>
